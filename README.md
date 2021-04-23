@@ -22,4 +22,4 @@ Or in case you didn't realize that ``releases page`` was a link: https://github.
 
 ## Web:
 Visit [this site](https://sharks-interactive.github.io/Ludum-Dare-48/) to play the game right in your browser through the power of Unity WebGL!  
-Or in case you didn't realize that ``this site`` was a link: https://github.com/Sharks-Interactive/Ludum-Dare-48/releases
+Or in case you didn't realize that ``this site`` was a link: https://sharks-interactive.github.io/Ludum-Dare-48/
