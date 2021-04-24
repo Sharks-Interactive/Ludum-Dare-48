@@ -5,7 +5,24 @@ using SharkUtils;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("References")]
     public Camera MainCamera;
+    public Rigidbody2D PlayerRB;
+    public Animator PlayerAnimator;
+
+    [Header("Cache")]
+    private float _changeY;
+    private float _changeX;
+    private float _tCx, _tCy;
+    private bool _facingRight;
+
+    [Header("Movement")]
+    public float YAccel;
+    public float XAccel;
+    public float XCap;
+    public float YCap;
+    public float Friction;
+    public float ZeroThreshold;
 
     // Start is called before the first frame update
     void Start()
@@ -16,23 +33,85 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.Translate(0.5f * Time.deltaTime, 0, 0);
-        }
+        HandleMovment();
+        _tCx = _changeX * 150; _tCx *= Time.deltaTime;
+        _tCy = _changeY * 150; _tCy *= Time.deltaTime;
 
-        LookTowardsMouse();
+        _facingRight = (_tCx != 0) ? _tCx > 0 : PlayerAnimator.GetBool("FacingRight");
+
+        PlayerAnimator.SetBool("FacingRight", _facingRight);
+        Move();
     }
 
-    public void LookTowardsMouse()
+    public void HandleMovment()
     {
-        Vector3 lookAtTargetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        HandleXAxisInput();
+        HandleYAxisInput();
+        ZeroIn();
+    }
 
-        Quaternion rot = Quaternion.LookRotation(transform.position - lookAtTargetPos, Vector3.forward);
-        rot.x = transform.rotation.x;
-        rot.y = transform.rotation.y;
-        rot.eulerAngles = new Vector3(rot.eulerAngles.x, rot.eulerAngles.y, rot.eulerAngles.z + 90);
+    public void Move()
+    {
+        PlayerRB.AddForce(new Vector2(_tCx, _tCy), ForceMode2D.Force);
+    }
 
-        transform.rotation = rot;
+    public void HandleYAxisInput()
+    {
+        if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) && _changeY < YCap)
+        {
+            _changeY += YAccel;
+        }
+        else if (_changeY > 0)
+        {
+            _changeY -= Friction;
+        }
+
+        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && _changeY > YCap * -1)
+        {
+            _changeY -= YAccel;
+        }
+        else if (_changeY < 0)
+        {
+            _changeY += Friction;
+        }
+    }
+
+    public void HandleXAxisInput()
+    {
+        if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) && _changeX < XCap)
+        {
+            _changeX += XAccel;
+        }
+        else if (_changeX > 0)
+        {
+            _changeX -= Friction;
+        }
+
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) && _changeX > XCap * -1)
+        {
+            _changeX -= XAccel;
+        }
+        else if (_changeX < 0)
+        {
+            _changeX += Friction;
+        }
+    }
+
+    public void ZeroIn()
+    {
+        if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.RightArrow))
+        {
+            if (_changeX > 0 && _changeX < ZeroThreshold)
+                _changeX = 0;
+
+            if (_changeX < 0 && _changeX > ZeroThreshold * -1)
+                _changeX = 0;
+
+            if (_changeY > 0 && _changeY < ZeroThreshold)
+                _changeY = 0;
+
+            if (_changeY < 0 && _changeY > ZeroThreshold * -1)
+                _changeY = 0;
+        }
     }
 }
