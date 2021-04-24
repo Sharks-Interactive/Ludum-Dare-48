@@ -238,6 +238,20 @@ namespace SharkUtils
         {
             return (Value - From1) / (To1 - From1) * (To2 - From2) + From2;
         }
+
+        /// <summary>
+        /// (Extension Method) Takes in a quaternion and strips it of everything axis except the Zed
+        /// </summary>
+        /// <param name="val"></param>
+        /// <returns></returns>
+        public static Quaternion RemoveRotationAxis2D(this Quaternion Val)
+        {
+            Quaternion _val = Val;
+
+            _val.eulerAngles = new Vector3(0, 0, _val.eulerAngles.z);
+
+            return _val;
+        }
     }
 
     [Serializable]
