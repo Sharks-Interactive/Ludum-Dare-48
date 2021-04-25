@@ -252,6 +252,43 @@ namespace SharkUtils
 
             return _val;
         }
+
+        /// <summary>
+        /// Sets the specified axis of a quaternion to the value given
+        /// </summary>
+        /// <param name="_val"> (Extension Method) </param>
+        /// <param name="Axis"> What axis to set: x : y : z : w. </param>
+        /// <param name="Value"> The value to set the axis to. </param>
+        /// <returns></returns>
+        public static Quaternion SetAxis(this Quaternion _val, string Axis, float Value)
+        {
+            Quaternion _rot = _val;
+
+            switch (Axis)
+            {
+                case "x":
+                    _rot.x = Value;
+                    break;
+
+                case "y":
+                    _rot.y = Value;
+                    break;
+
+                case "z":
+                    _rot.z = Value;
+                    break;
+
+                case "w":
+                    _rot.w = Value;
+                    break;
+
+                default:
+                    break;
+            }
+
+            _val = _rot;
+            return _rot;
+        }
     }
 
     [Serializable]

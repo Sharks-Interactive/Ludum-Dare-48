@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: 997028380110023618
     second: Concept edited_3
+  - first:
+      213: -606399756113153984
+    second: Concept edited_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -186,7 +189,7 @@ TextureImporter:
         width: 236
         height: 145
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,6 +197,27 @@ TextureImporter:
       bones: []
       spriteID: 2cbe07b770826dd00800000000000000
       internalID: 997028380110023618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concept edited_4
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1364
+        width: 439
+        height: 989
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040fdf872a2a597f0800000000000000
+      internalID: -606399756113153984
       vertices: []
       indices: 
       edges: []

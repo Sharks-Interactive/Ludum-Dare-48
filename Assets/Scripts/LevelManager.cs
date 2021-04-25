@@ -28,6 +28,8 @@ public class LevelManager : MonoBehaviour
 
     [Header("References")]
     public GameObject Player;
+    public Animator TransitionAnim;
+    public GameObject Cam;
 
     //Cache
     private int _currentLevel = 0;
@@ -35,6 +37,14 @@ public class LevelManager : MonoBehaviour
     public void AdvanceLevel()
     {
         _currentLevel++;
+        TransitionAnim.SetTrigger("Fade");
+        StartCoroutine(YesImSerious());
+    }
+
+    public IEnumerator YesImSerious ()
+    {
+        yield return new WaitForSeconds(0.9f);
         Player.transform.position = LevelOrigins[_currentLevel].position;
+        Cam.transform.position = Player.transform.position;
     }
 }

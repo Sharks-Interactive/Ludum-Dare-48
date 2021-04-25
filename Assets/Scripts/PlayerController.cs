@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public Camera MainCamera;
     public Rigidbody2D PlayerRB;
     public Animator PlayerAnimator;
+    public AudioClip EndSound;
+    public AudioSource ASrc;
 
     [Header("Cache")]
     private float _changeY;
@@ -37,11 +39,24 @@ public class PlayerController : MonoBehaviour
         _tCx = _changeX * 150; _tCx *= Time.deltaTime;
         _tCy = _changeY * 150; _tCy *= Time.deltaTime;
 
+        ASrc.volume = (_changeX != 0 || _changeY != 0) ? 1.0f : 0.0f;
+
         _facingRight = (_tCx != 0) ? _tCx > 0 : PlayerAnimator.GetBool("FacingRight");
 
         PlayerAnimator.SetBool("FacingRight", _facingRight);
         Move();
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.CompareTag("ViewZone"))
+            return;
+
+        GetComponent<AudioSource>().PlayOneShot(EndSound);
+        //Gameover
+    }
+
+    #region Movement
 
     public void HandleMovment()
     {
@@ -114,4 +129,6 @@ public class PlayerController : MonoBehaviour
                 _changeY = 0;
         }
     }
+
+    #endregion
 }
