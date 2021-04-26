@@ -18,6 +18,8 @@ public class PowerShutoff : MonoBehaviour, IInteractableElement
     void Start()
     {
         InteractionText = InteractionMessage;
+        if (PlayerPrefs.GetInt("Level", 0) >= 3)
+            OnInteracted();
     }
 
     public void OnInteractionExit()

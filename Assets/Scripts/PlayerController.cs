@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
             return;
 
         GetComponent<AudioSource>().PlayOneShot(EndSound);
-        //Gameover
+        LevelManager.Instance.ResetLevel();
     }
 
     #region Movement

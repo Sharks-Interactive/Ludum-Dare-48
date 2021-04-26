@@ -6,11 +6,12 @@ using UnityEngine;
 public class ZLock : MonoBehaviour
 {
     private Vector3 position;
+    public int Level;
 
     void Update()
     {
         position = transform.position;
-        position.z = 1;
+        position.z = Level;
 
         transform.position = position;
     }

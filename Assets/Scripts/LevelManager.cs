@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [ExecuteInEditMode]
 public class LevelManager : MonoBehaviour
@@ -32,6 +34,7 @@ public class LevelManager : MonoBehaviour
     public GameObject Player;
     public Animator TransitionAnim;
     public GameObject Cam;
+    public Image Transition;
 
     [Space(10)]
     public bool AdvanceLevelTrigger;
@@ -53,12 +56,34 @@ public class LevelManager : MonoBehaviour
     }
 #endif
 
+    void Start() => StartUp();
+
+    public void StartUp ()
+    {
+        _currentLevel = PlayerPrefs.GetInt("Level", 0);
+        Player.transform.position = LevelOrigins[_currentLevel].position;
+        Cam.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, -10);
+    }
+
+    public void ResetLevel()
+    {
+        if (_cr != null)
+            return;
+
+        _currentLevel--;
+        PlayerPrefs.SetInt("Level", _currentLevel);
+        Transition.color = Color.red;
+        TransitionAnim.SetTrigger("Fade");
+        _cr = StartCoroutine(YesImReallySerious());
+    }
+
     public void AdvanceLevel()
     {
         if (_cr != null)
             return;
 
         _currentLevel++;
+        Transition.color = Color.black;
         TransitionAnim.SetTrigger("Fade");
         _cr = StartCoroutine(YesImSerious());
     }
@@ -67,7 +92,14 @@ public class LevelManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.9f);
         Player.transform.position = LevelOrigins[_currentLevel].position;
-        Cam.transform.position = Player.transform.position;
+        Cam.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, -10);
+        _cr = null;
+    }
+
+    public IEnumerator YesImReallySerious()
+    {
+        yield return new WaitForSeconds(0.9f);
+        SceneManager.LoadScene(1);
         _cr = null;
     }
 }
