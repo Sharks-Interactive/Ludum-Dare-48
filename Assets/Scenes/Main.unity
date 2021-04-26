@@ -3739,7 +3739,7 @@ MonoBehaviour:
   PathMarkers:
   - {x: 8.1, y: 90.38, z: 0}
   - {x: 11.8, y: 90.38, z: 0}
-  - {x: 11.8, y: 82.56, z: 0}
+  - {x: 11.8, y: 83.4, z: 0}
   - {x: 11.8, y: 90.38, z: 0}
   Speed: 0.01
   GuardAnimator: {fileID: 252658868}
@@ -13306,8 +13306,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: a972fbff2ab902542b1034cffc067290, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.842
+  m_Pitch: 0.75
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -13426,6 +13426,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb59fbc2e9dcf84dab69108c38cc8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HorseNoisesL:
+  - {fileID: 8300000, guid: 97785941e0b5f3b44bfc0759286ab5c1, type: 3}
+  - {fileID: 8300000, guid: 9c88954237fd5eb4f9f64201ce9d5e22, type: 3}
+  - {fileID: 8300000, guid: 434f99047fda51c47af4b2878e1327ca, type: 3}
+  - {fileID: 8300000, guid: 9b901e73c1183f64d8f58e5b09fddf7d, type: 3}
+  - {fileID: 8300000, guid: e08606b56d587924ba8be0c3e87b8ab6, type: 3}
+  Player: {fileID: 963194230}
+  TimeRange: {x: 30, y: 60}
+  Darkness: {fileID: 2036987222}
 --- !u!1 &985706248
 GameObject:
   m_ObjectHideFlags: 0
@@ -15765,7 +15774,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222135612}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.08, y: 100.87, z: 0}
+  m_LocalPosition: {x: 6.08, y: 100.86, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 2032776754}
@@ -20579,7 +20588,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: a972fbff2ab902542b1034cffc067290, type: 2}
   m_audioClip: {fileID: 8300000, guid: e04ac5e4ae570ff49b9dbe502be15a60, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.627
+  m_Volume: 0.054
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -22435,7 +22444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753922799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.68, y: 9.11, z: 0}
+  m_LocalPosition: {x: 7.68, y: 9.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 679202702}
@@ -26443,7 +26452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2032776754
 Transform:
   m_ObjectHideFlags: 0

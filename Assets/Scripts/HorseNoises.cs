@@ -5,10 +5,10 @@ using SharkUtils;
 
 public class HorseNoises : MonoBehaviour
 {
-
-    public List<AudioClip> HorseNoises = new List<AudioClip>();
+    public List<AudioClip> HorseNoisesL = new List<AudioClip>();
     public AudioSource Player;
     public Vector2 TimeRange;
+    public GameObject Darkness;
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +17,12 @@ public class HorseNoises : MonoBehaviour
     }
 
     // Update is called once per frame
-    IEnumerator Play()
+    public IEnumerator Play()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(ExtraFunctions.RandomFromRange(TimeRange));
+
+        if (Darkness.activeInHierarchy)
+            Player.PlayOneShot(ExtraFunctions.RandomFromList(HorseNoisesL));
+        StartCoroutine(Play());
     }
 }
