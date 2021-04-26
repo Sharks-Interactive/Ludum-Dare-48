@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public Animator PlayerAnimator;
     public AudioClip EndSound;
     public AudioSource ASrc;
+    public Animator WalkAnimator;
 
     [Header("Cache")]
     private float _changeY;
@@ -26,12 +27,6 @@ public class PlayerController : MonoBehaviour
     public float Friction;
     public float ZeroThreshold;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -40,6 +35,7 @@ public class PlayerController : MonoBehaviour
         _tCy = _changeY * 150; _tCy *= Time.deltaTime;
 
         ASrc.volume = (_changeX != 0 || _changeY != 0) ? 1.0f : 0.0f;
+        WalkAnimator.SetBool("Walking", _changeX != 0 || _changeY != 0);
 
         _facingRight = (_tCx != 0) ? _tCx > 0 : PlayerAnimator.GetBool("FacingRight");
 

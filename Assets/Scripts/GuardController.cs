@@ -27,13 +27,35 @@ public class GuardController : MonoBehaviour
         GuardAnimator.SetBool("FacingRight", _lastXPosition - transform.position.x < 0);
         _lastXPosition = transform.position.x;
 
-        transform.position = Vector3.MoveTowards(transform.position, PathMarkers[_currentPathMarker], Speed);
+        transform.position = Vector3.MoveTowards(transform.position, PathMarkers[_currentPathMarker], (Speed * 150) * Time.deltaTime);
 
         if (transform.position == PathMarkers[_currentPathMarker])
             if (_currentPathMarker == PathMarkers.Count - 1)
                 _currentPathMarker = 0;
             else
                 _currentPathMarker++;
+    }
+
+    public void InvestigateDisturbance(string LocalPos)
+    {
+        string[] _positionsList = LocalPos.Split('|');
+        List<float> _positions = new List<float>();
+
+        for (int x = 0; x < PathMarkers.Count; x++)
+        {
+            PathMarkers[x] = new Vector3(float.Parse(_positionsList[0]), float.Parse(_positionsList[1]), float.Parse(_positionsList[2]));
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!collision.collider.CompareTag("GuardBlock"))
+            return;
+
+        if (_currentPathMarker != 0)
+            _currentPathMarker--;
+        else
+            _currentPathMarker = PathMarkers.Count - 1;
     }
 
 #if UNITY_EDITOR

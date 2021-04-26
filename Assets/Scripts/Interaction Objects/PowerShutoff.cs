@@ -12,6 +12,7 @@ public class PowerShutoff : MonoBehaviour, IInteractableElement
     public GameObject CameraView;
     public Collider2D CameraCollider;
     public Collider2D InteractionBox;
+    public GameObject Fog;
 
     void Start()
     {
@@ -34,5 +35,6 @@ public class PowerShutoff : MonoBehaviour, IInteractableElement
         CameraView.SetActive(false);
         CameraCollider.enabled = false;
         InteractionBox.enabled = false;
+        Fog.SetActive(true);
     }
 }

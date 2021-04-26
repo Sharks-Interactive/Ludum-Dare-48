@@ -9,6 +9,8 @@ public class Door : MonoBehaviour, IInteractableElement
 
     public string InteractionText { get; set; }
 
+    public bool IsLocked = false;
+
     void Start()
     {
         InteractionText = InteractionMessage;
@@ -21,11 +23,28 @@ public class Door : MonoBehaviour, IInteractableElement
 
     public void OnInteractionEnter()
     {
+        if (IsLocked)
+            InteractionText = "This door is locked!";
+        else
+            InteractionText = InteractionMessage;
+    }
 
+    public void Unlock()
+    {
+        IsLocked = false;
+        InteractionText = InteractionMessage;
     }
 
     public void OnInteracted()
     {
+        if (IsLocked)
+        {
+            InteractionText = "This door is locked!";
+            return;
+        }
+        else
+            InteractionText = InteractionMessage;
+
         LevelManager.Instance.AdvanceLevel();
     }
 }
