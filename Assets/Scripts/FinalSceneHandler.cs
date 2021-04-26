@@ -1,6 +1,8 @@
 using Unity;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
+using System.Collections;
 
 public class FinalSceneHandler : MonoBehaviour {
 
@@ -33,16 +35,16 @@ public class FinalSceneHandler : MonoBehaviour {
     StartCoroutine(HackFacility()); 
   }
   
-  public Ienumerator HackFacility ()
+  public IEnumerator HackFacility ()
   {
     yield return new WaitForSeconds(0.2f);
-    OverallSlider.fill = 1 / HackTime;
-    HackTime -= 0.2;
+    OverallSlider.fillAmount = 1 / HackTime;
+    HackTime -= 0.2f;
     
     if (HackTime <= 0)
     {
       ExplosionEffects.SetActive(true);
-      return;
+      yield return null;
     }
     
     StartCoroutine(HackFacility());
@@ -50,12 +52,12 @@ public class FinalSceneHandler : MonoBehaviour {
   
   void Update ()
   {
-    for (int z; z < _doorProgress.Length; z++)
+    for (int z = 0; z < _doorProgress.Length; z++)
     {
       if (_doorProgress[z] <= 0) break;
       _doorProgress[z] -= DoorValueDecrease[z] * Time.deltaTime;
-      DoorObjects[z].fill = _doorProgress[z];
-      DoorObjects[z + 3].fill = _doorProgress[z];
+      DoorObjects[z].fillAmount = _doorProgress[z];
+      DoorObjects[z + 3].fillAmount = _doorProgress[z];
       
       GameOverScreenThing.SetActive(_doorProgress[z] <= 0);
     }
