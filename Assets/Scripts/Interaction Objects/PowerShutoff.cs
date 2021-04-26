@@ -13,6 +13,7 @@ public class PowerShutoff : MonoBehaviour, IInteractableElement
     public Collider2D CameraCollider;
     public Collider2D InteractionBox;
     public GameObject Fog;
+    public AudioClip PowerOffS;
 
     void Start()
     {
@@ -36,5 +37,6 @@ public class PowerShutoff : MonoBehaviour, IInteractableElement
         CameraCollider.enabled = false;
         InteractionBox.enabled = false;
         Fog.SetActive(true);
+        GetComponent<AudioSource>().PlayOneShot(PowerOffS);
     }
 }

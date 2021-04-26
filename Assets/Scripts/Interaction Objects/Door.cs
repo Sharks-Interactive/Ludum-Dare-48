@@ -10,6 +10,7 @@ public class Door : MonoBehaviour, IInteractableElement
     public string InteractionText { get; set; }
 
     public bool IsLocked = false;
+    public AudioClip DoorOpening;
 
     void Start()
     {
@@ -45,6 +46,7 @@ public class Door : MonoBehaviour, IInteractableElement
         else
             InteractionText = InteractionMessage;
 
+        GetComponent<AudioSource>().PlayOneShot(DoorOpening);
         LevelManager.Instance.AdvanceLevel();
     }
 }
