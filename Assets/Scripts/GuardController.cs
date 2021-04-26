@@ -10,21 +10,19 @@ public class GuardController : MonoBehaviour
 
     [Header("References")]
     public Animator GuardAnimator;
+    public Animator WalkingAnimator;
 
     //Cache
     private float _lastXPosition;
     private int _currentPathMarker = 1;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         GuardAnimator.SetBool("FacingRight", _lastXPosition - transform.position.x < 0);
+        if (!WalkingAnimator.GetBool("Walking"))
+            WalkingAnimator.SetBool("Walking", true);
+
         _lastXPosition = transform.position.x;
 
         transform.position = Vector3.MoveTowards(transform.position, PathMarkers[_currentPathMarker], (Speed * 150) * Time.deltaTime);
