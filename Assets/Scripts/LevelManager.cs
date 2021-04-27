@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour
     public int TestingLevel;
 
     //Cache
-    private int _currentLevel = 0;
+    public int _currentLevel = 0;
     private Coroutine _cr;
 
 #if UNITY_EDITOR
@@ -61,6 +61,9 @@ public class LevelManager : MonoBehaviour
     public void StartUp ()
     {
         _currentLevel = PlayerPrefs.GetInt("Level", 0);
+#if UNITY_EDITOR
+        _currentLevel = TestingLevel;
+#endif
         Player.transform.position = LevelOrigins[_currentLevel].position;
         Cam.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, -10);
     }

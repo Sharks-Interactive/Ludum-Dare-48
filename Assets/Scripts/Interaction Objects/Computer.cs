@@ -13,6 +13,10 @@ public class Computer : MonoBehaviour, IInteractableElement
 
     public string InteractionText { get; set; }
 
+    public FinalSceneHandler FS;
+    public bool _isSpecial;
+    public int CompNum;
+
     [Header("UI Components")]
     public CanvasGroup SliderGroup;
     public Image SliderFill;
@@ -63,6 +67,8 @@ public class Computer : MonoBehaviour, IInteractableElement
             SliderGroup.DOKill();
             SliderGroup.DOFade(1.0f, 1);
             _hackingProgress += 1.0f / HackingTime * Time.deltaTime;
+            if (_isSpecial)
+                FS.HackComputerInput(CompNum);
         }
         else
         {

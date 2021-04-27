@@ -11,4 +11,6 @@ public class MenuManager : MonoBehaviour
     //See LevelLoader.cs for loading stuff
 
     public void Quit () => Application.Quit();
+
+    public void SimpleLoad(int t_scene) => SceneManager.LoadScene(t_scene);
 }
