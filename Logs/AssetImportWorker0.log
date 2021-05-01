@@ -1816,3 +1816,252 @@ Received Import Request.
 Start importing Assets/Scenes/ThanksForPlaying.unity using Guid(52fa927e8e79f714294b19e28f52d13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '499fffbe8b7bf1991d36fbe087884d7e') in 0.026873 seconds
   Import took 0.031289 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002821 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.166 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2150 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.3 MB.
+System memory in use after: 108.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2959.
+Total: 3.140800 ms (FindLiveObjects: 0.290500 ms CreateObjectMapping: 0.065700 ms MarkObjects: 2.327900 ms  DeleteObjects: 0.455500 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.1 MB.
+System memory in use after: 65.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2959.
+Total: 4.179400 ms (FindLiveObjects: 0.458600 ms CreateObjectMapping: 0.088700 ms MarkObjects: 3.009200 ms  DeleteObjects: 0.620200 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.1 MB.
+System memory in use after: 65.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2959.
+Total: 4.071100 ms (FindLiveObjects: 0.482000 ms CreateObjectMapping: 0.102600 ms MarkObjects: 2.951300 ms  DeleteObjects: 0.532000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 523.207253 seconds.
+  path: Assets/Images/Company Logo choice 2-1 (1).png
+  artifactKey: Guid(72e83bf7b788f3f4ba442ae1914b481a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Company Logo choice 2-1 (1).png using Guid(72e83bf7b788f3f4ba442ae1914b481a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e175e6b8619ae75f42b4dca6fedfb35') in 0.064526 seconds
+  Import took 0.069852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002704 seconds.
+  path: Assets/Images/Company Logo choice 2-1 (1).png
+  artifactKey: Guid(72e83bf7b788f3f4ba442ae1914b481a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Company Logo choice 2-1 (1).png using Guid(72e83bf7b788f3f4ba442ae1914b481a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e175e6b8619ae75f42b4dca6fedfb35') in 0.010997 seconds
+  Import took 0.015642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.916612 seconds.
+  path: Assets/Images/500pSquare.png
+  artifactKey: Guid(fda7db88a554dba4898cdd0f63e6ac49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/500pSquare.png using Guid(fda7db88a554dba4898cdd0f63e6ac49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572e1007537c85ee7108470c934d0b56') in 0.098134 seconds
+  Import took 0.103052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.119551 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28cf80e73f8d860b139826fca2d2d008') in 0.107593 seconds
+  Import took 0.111973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044522 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
+  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31aa59d73c2fa30fbf9c822b7cee0628') in 0.042458 seconds
+  Import took 0.046933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards_Normal.tga
+  artifactKey: Guid(0ec79c3d1dd0fb640b7f3f72ebb28f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards_Normal.tga using Guid(0ec79c3d1dd0fb640b7f3f72ebb28f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69c26a7cbb0eea1be1e51b4eff7a5287') in 0.033978 seconds
+  Import took 0.038508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Specular.tga
+  artifactKey: Guid(d954891cb9e58434d86e01d839ed4997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Specular.tga using Guid(d954891cb9e58434d86e01d839ed4997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25e1f7090e92fc78297eeea93f1d11b1') in 0.018137 seconds
+  Import took 0.022499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards.tga
+  artifactKey: Guid(951aab9a19f551f4385d0ceafdaf19b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards.tga using Guid(951aab9a19f551f4385d0ceafdaf19b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9fa3f99dccb5c09da657999561f671') in 0.035415 seconds
+  Import took 0.039563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Billboards.tga
+  artifactKey: Guid(bc6e7e1374ff3e1459f65bf72da64c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Billboards.tga using Guid(bc6e7e1374ff3e1459f65bf72da64c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42244f1535320a59e69d6823fe1395fb') in 0.018084 seconds
+  Import took 0.022098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Normal.tga
+  artifactKey: Guid(b552931caa1b3ea418b9ba90cbd1333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Normal.tga using Guid(b552931caa1b3ea418b9ba90cbd1333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff56903b13e988f8431e7a8a04c117a5') in 0.018342 seconds
+  Import took 0.023206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas.tga
+  artifactKey: Guid(2c116325e19b8a04d916864cc540ec2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas.tga using Guid(2c116325e19b8a04d916864cc540ec2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ed16266187e2b1ef3f7f8e91070e34') in 0.014280 seconds
+  Import took 0.018603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/BroadleafBark.tga
+  artifactKey: Guid(2c1c27ec8c3b75a4c80a795adc9ca788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/BroadleafBark.tga using Guid(2c1c27ec8c3b75a4c80a795adc9ca788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cefdcb3a64156c48c716b7e252e3ccfd') in 0.014902 seconds
+  Import took 0.019282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Normal.tga
+  artifactKey: Guid(be053ea3235ccb64a889bf0b15c2764b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Normal.tga using Guid(be053ea3235ccb64a889bf0b15c2764b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0fb5e5e7e784eba31ce828dcc1a32ab') in 0.014527 seconds
+  Import took 0.018530 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/BroadleafBark_Normal.tga
+  artifactKey: Guid(34f07406286974e4ca236867d8d58b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/BroadleafBark_Normal.tga using Guid(34f07406286974e4ca236867d8d58b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1fe7851b2b00b10058bc1c825a66fdf') in 0.013288 seconds
+  Import took 0.017200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Billboards_Normal.tga
+  artifactKey: Guid(c9de3ae2361df6c469caeb2024321cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Billboards_Normal.tga using Guid(c9de3ae2361df6c469caeb2024321cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a37815d4e477ca7bfa0e0dc8cdeb848') in 0.016745 seconds
+  Import took 0.021079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas.tga
+  artifactKey: Guid(d20e5329bb2905844a1ae38b80640d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas.tga using Guid(d20e5329bb2905844a1ae38b80640d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdfeec7c2ce5ba7623ab053ffbf8a2c1') in 0.094957 seconds
+  Import took 0.099027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Specular.tga
+  artifactKey: Guid(45cab4c9b31009748999eec1556926b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Specular.tga using Guid(45cab4c9b31009748999eec1556926b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eec7b38d3f552a6ebe16a3d7ed8f3e9') in 0.013039 seconds
+  Import took 0.016792 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.92 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.3 MB.
+System memory in use after: 67.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3002.
+Total: 4.530900 ms (FindLiveObjects: 0.379800 ms CreateObjectMapping: 0.068100 ms MarkObjects: 3.597900 ms  DeleteObjects: 0.482900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002579 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.101 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2150 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 108.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3006.
+Total: 3.651300 ms (FindLiveObjects: 0.373400 ms CreateObjectMapping: 0.071800 ms MarkObjects: 2.734700 ms  DeleteObjects: 0.469600 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.5 MB.
+System memory in use after: 66.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3006.
+Total: 3.166800 ms (FindLiveObjects: 0.444700 ms CreateObjectMapping: 0.093100 ms MarkObjects: 2.155200 ms  DeleteObjects: 0.472500 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.5 MB.
+System memory in use after: 66.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3006.
+Total: 3.575800 ms (FindLiveObjects: 0.428800 ms CreateObjectMapping: 0.091200 ms MarkObjects: 2.531800 ms  DeleteObjects: 0.522400 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.5 MB.
+System memory in use after: 66.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3006.
+Total: 4.102500 ms (FindLiveObjects: 0.407100 ms CreateObjectMapping: 0.070200 ms MarkObjects: 3.042400 ms  DeleteObjects: 0.581000 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
