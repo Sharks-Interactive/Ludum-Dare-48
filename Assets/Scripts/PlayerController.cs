@@ -31,8 +31,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         HandleMovment();
-        _tCx = _changeX * 150; _tCx *= Time.deltaTime;
-        _tCy = _changeY * 150; _tCy *= Time.deltaTime;
+        _tCx = _changeX * 150; 
+        _tCx *= Time.deltaTime;
+        _tCy = _changeY * 150; 
+        _tCy *= Time.deltaTime;
 
         ASrc.volume = (_changeX != 0 || _changeY != 0) ? 1.0f : 0.0f;
         WalkAnimator.SetBool("Walking", _changeX != 0 || _changeY != 0);

@@ -49,7 +49,7 @@ public class Computer : MonoBehaviour, IInteractableElement
         hack_FadeWatcher = false;
     }
 
-    void Update ()
+    void FixedUpdate ()
     {
         if (!_readyToHack)
         {
@@ -66,7 +66,7 @@ public class Computer : MonoBehaviour, IInteractableElement
         {
             SliderGroup.DOKill();
             SliderGroup.DOFade(1.0f, 1);
-            _hackingProgress += 1.0f / HackingTime * Time.deltaTime;
+            _hackingProgress += 1.0f / HackingTime;
             if (_isSpecial)
                 FS.HackComputerInput(CompNum);
         }

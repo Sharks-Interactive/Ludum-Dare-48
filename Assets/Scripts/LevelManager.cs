@@ -73,7 +73,7 @@ public class LevelManager : MonoBehaviour
         if (_cr != null)
             return;
 
-        _currentLevel--;
+        //_currentLevel--;
         PlayerPrefs.SetInt("Level", _currentLevel);
         Transition.color = Color.red;
         TransitionAnim.SetTrigger("Fade");
