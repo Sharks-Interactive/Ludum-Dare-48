@@ -1,5 +1,6 @@
 # Sharks Interactive: Ludum Dare 48
 This is the public repo for Sharks Interactive's Ludum Dare 48 entry.
+We take part in game jams for fun, and as a break from our other software projects.
 It primarily utilizes the following:
 ```
 - Unity C#
