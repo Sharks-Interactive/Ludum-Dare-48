@@ -1,17 +1,17 @@
 # Sharks Interactive: Ludum Dare 48
-This is the public repo for Sharks Interactive's Ludum Dare 48 entry!
+This is the public repo for Sharks Interactive's Ludum Dare 48 entry.
 It primarily utilizes the following:
 ```
 - Unity C#
 - Blender
-- Aseprite
+- FireAlpaca
 - Audacity
 ```
 We hope you'll enjoy it as much as we enjoyed making it.  
 ```
 Contributors:  
 - Owen + Melissa Silva  
-- Redmond Shinnick
+- Fiona Thornton
 ```
 
 # How to play:
